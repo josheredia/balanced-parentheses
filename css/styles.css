@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@600&display=swap");
+@import url("./containers.css");
+
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+ol {
+  padding-left: 20px;
+}
