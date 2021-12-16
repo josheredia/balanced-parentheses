@@ -1,0 +1,33 @@
+.title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  color: #17171c;
+}
+
+.text,
+li {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.75px;
+  color: #303036;
+}
+
+ol > li::marker {
+  font-weight: bold;
+}
+
+.subtitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #17171c;
+  margin: 4px;
+}
