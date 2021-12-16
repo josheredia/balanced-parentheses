@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balanced Parentheses</title>
+  </head>
+  <body>
+    <h1>Balanced Parentheses</h1>
+    <p>
+      Doesn't it happen that your eyes hurt when you see a message with
+      unbalanced parentheses? For us programmers, it can cause a headache to see
+      a whatsapp like <b>"thank you for that :)))"</b>,
+      <b>"I would love to go (but I don't think I can :("</b>, or
+      <b>"I'm working (on what I you asked (but I won't finish today :() "</b>.
+      To make matters worse, with emoticons, it becomes difficult to tell if a
+      message has balanced parentheses.
+    </p>
+    <div>
+      <p>
+        A message has balanced parentheses when it meets one of the following
+        rules:
+      </p>
+      <ol type="1">
+        <li>It is an empty message</li>
+        <li>
+          Contains only one or more repetitions of the letters "a" through "z",
+          space "", or colon ":"
+        </li>
+        <li>
+          It begins with an opening parenthesis "(", followed by a message with
+          balanced parentheses, followed by a closing parenthesis ")"
+        </li>
+        <li>
+          It is a message with balanced parentheses followed by another message
+          with balanced parentheses
+        </li>
+        <li>It is a happy emoticon ":)" or a sad one ":("</li>
+      </ol>
+    </div>
+    <div>
+      <p>
+        This program identifies if there is at least one way to interpret the
+        input as a balanced parenthesis message. The input is a string and the
+        output must be "balanced" or "unbalanced".
+      </p>
+      <p>Examples:</p>
+      <ol type="a">
+        <li>"hello" ➡ balanced</li>
+        <li>"(hello)" ➡ balanced</li>
+        <li>"(()" ➡ unbalanced</li>
+        <li>
+          "(:)" ➡ balanced (eg, if we consider the message as a ":" [rule 2] in
+          parentheses [rule 3])
+        </li>
+        <li>
+          "no voy (:()" ➡ balanced (eg, if we consider the message as a ":"
+          [rule 2] in parentheses [rule 3])
+        </li>
+        <li>"hoy pm: fiesta :):)" ➡ balanced</li>
+        <li>":((" ➡ unbalanced</li>
+        <li>
+          "a (b (c (d) c) b) a :)" ➡ balanced (eg, if the last parenthesis is
+          actually an emoticon)
+        </li>
+      </ol>
+      <h2>Enter your text:</h2>
+      <input />
+      <h2>Result:</h2>
+      <p></p>
+    </div>
+  </body>
+</html>
